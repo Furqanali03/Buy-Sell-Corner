@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Post Ad</title>
+    <link rel="icon" type="image/png" href="asset/img.jfif">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="bg-transparent	h-auto">
+
+    <!-- navbar starts here -->
+
+    <header>
+        <div class="navbar h-8 p-1 flex justify-between">
+            <div class="flex">
+              <a class="btn btn-ghost text-xl">Buy / Sells Corner</a>
+            </div>
+            
+              <div class="dropdown p-2 dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-11 rounded-full">
+                    <img
+                      alt="Tailwind CSS Navbar component"
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                  </div>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li>
+                    <a href="index.html" class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="register.html">Register</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </header>
+      
+  
+      <!-- navbar ends here -->
+
+      <!-- Post Ad field starts here  -->
+
+      <div class="bg-slate-200 h-[40rem] w-auto m-auto mt-20">
+
+        <div class="text-center font-bold mt-3  mb-10 text-3xl text-black"><h1>Post Ad</h1></div>
+        <div class="p-3 flex justify-center">
+
+          <div class="card w-[36rem] bg-blue shadow-xl">
+            <div class="card-body items-center text-center">
+              <i class="fa-regular fa-square-plus text-4xl"></i>
+              <label class="btn bg-blue">
+                Upload Product Photo
+                <input type="file" class="hidden">
+              </label>
+            </div>
+          </div>
+          
+
+      </div>
+      <label class="input bg-white input-bordered flex items-center m-2 gap-2">
+        <input type="text" class="grow" placeholder="Product title" />
+      </label>
+      <label class="input bg-white input-bordered flex items-center m-2 gap-2">
+        <input type="text" class="grow" placeholder="Product description" />
+      </label>
+      <label class="input bg-white input-bordered flex items-center m-2 gap-2">
+        <input type="text" class="grow" placeholder="Product Price" />
+      </label>
+      <label class="input bg-white input-bordered flex items-center m-2 gap-2">
+        <input type="text" class="grow" placeholder="Enter your name" />
+      </label>
+      <label class="input bg-white input-bordered flex items-center m-2 gap-2">
+        <input type="text" class="grow" placeholder="Enter your phone number" />
+      </label>
+      <div class="flex justify-end mt-6 m-2">
+        <button class="btn bg-blue">POST NOW</button>
+      </div>
+
+
+
+
+      <!-- Post Ad field ends here  -->
+  
+
+      <script src="https://kit.fontawesome.com/9aded8b196.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+</html>

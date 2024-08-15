@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Home page</title>
+    <link rel="icon" type="image/png" href="asset/img.jfif">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="h-full">
+
+    <!-- Navbar starts here -->
+    <header class="bg-blue shadow-md">
+      <div class="navbar h-16 p-4 flex justify-between items-center">
+          <div>
+            <a class="btn btn-ghost text-2xl font-bold text-white">Buy / Sells Corner</a>
+          </div>
+          
+          <div id="userHere" class="flex items-center space-x-4">
+            <i class="fa-solid fa-cart-shopping text-xl text-white"></i>
+            <div tabindex="0" class="dropdown dropdown-end">
+              <div class="btn btn-ghost btn-circle avatar">
+                <div class="w-12 rounded-full">
+                  <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="User avatar" />
+                </div>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow">
+                <li><a href="index.html">Profile <span class="badge">New</span></a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </header>
+    <!-- Navbar ends here -->
+
+    <!-- Search portion starts here -->
+    <div class="h">
+      <div class="w-full flex justify-center mt-40">
+      <label class="input input-bordered bg-white flex items-center w-full md:w-2/3 lg:w-1/2 gap-2 p-2 rounded-lg shadow-md">
+          <input type="text" class="grow focus:outline-none" placeholder="Search" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6 text-gray-600">
+              <path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" />
+          </svg>
+      </label>
+    </div>
+    <!-- Search portion ends here -->
+
+    <div class="container mx-auto mt-16">
+        <h1 class="font-bold text-4xl text-black text-center mb-12">Products</h1>
+
+        <!-- Card Grid starts here -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card bg-white w-80 mt-4 mb-4 h-72 shadow-lg rounded-lg">
+              <figure>
+                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" class="w-full rounded-t-lg" />
+              </figure>
+              <div class="card-body text-black p-4">
+                <h2 class="card-title text-lg font-bold">Shoes!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <button class="btn bg-blue">more info...</button>
+                </div>
+              </div>
+          </div>
+          <!-- Add more product cards as needed, up to 9 cards -->
+        </div>
+        <!-- Card Grid ends here -->
+    </div>
+
+    </div>
+    <!-- Footer starts here -->
+    <footer class="bg-blue-600 mt-20 navbar h-auto p-4 flex justify-between items-center">
+      <div class="container mx-auto py-8 flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <h3 class="text-xl text-white font-bold">Buy / Sells Corner</h3>
+          <p>&copy; 2024 All rights reserved.</p>
+        </div>
+        <div class="text-white space-x-4">
+          <a href="#" class="hover:text-white">About Us</a>
+          <a href="#" class="hover:text-white">Contact</a>
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+        </div>
+        <div class="text-white mt-4 md:mt-0">
+          <a href="#" class="text-xl hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-xl hover:text-white mx-4"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-xl hover:text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer ends here -->
+
+    <script src="https://kit.fontawesome.com/9aded8b196.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="script/config.js"></script>
+    <script type="module" src="script/main.js"></script>
+
+</body>
+</html>
